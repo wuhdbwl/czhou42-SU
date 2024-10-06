@@ -1,0 +1,27 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+  }
+caption,h1,header{
+    color: red;
+ }
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+h1, h2 {
+    color: rgb(60, 46, 209);
+}
+tr:nth-child(even) {
+    background-color: #f78787; 
+}
+tr:nth-child(odd) {
+    background-color: #8175d6dd; 
+}
+.evenrow {
+    background-color: #3d5ce5;
+}
+caption,h1,header{
+    font-size: 5em; 
+}
+dt {
+    font-size: 2em; 
+}
