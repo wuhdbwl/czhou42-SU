@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duke Layout Example</title>
+    <style>
+        body {
+            font-family: "Open Sans", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #002d72;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #002d72;
+            margin-bottom: 5px;
+        }
+
+        .up-next {
+            display: inline-block;
+            width: 90%;
+            vertical-align: top;
+        }
+
+        .up-next h3 {
+            margin-bottom: 0;
+        }
+
+        .up-next .event {
+            margin-bottom: 30px;
+        }
+
+        .resources {
+            display: inline-block;
+            width: 90%;
+            vertical-align: top;
+            margin-left: 5%;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .resource-grid div {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #e9e9e9;
+        }
+
+        .resource-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .date {
+            font-size: 28px;
+            color: #1d7dc2;
+            font-weight: bold;
+        }
+
+        .event-info {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .event-info p {
+            margin: 5px 0;
+        }
+
+        .half-left {
+            background-color: #d2dcff; 
+            height: 100%;
+            width: 50%;
+            float: left;
+            margin-left: 0
+        }
+
+        .half-right {
+            background-color: #e7f0fd; 
+            height: 100%;
+            width: 50%;
+            float: right;
+            margin-left: 0
+        }
+        hr.left-line {
+            border: none;
+            border-top: 2px solid #a4a0cf;
+            width: 100%; 
+            margin-left: 0; 
+        }
+    </style>
+</head>
+<body>
+<div class="half-left">
+    <div class="content">
+    <div class="up-next">
+        <h2>Up Next</h2>
+
+        <div class="event">
+            <span class="date">10.20</span>
+            <div class="event-info">
+                <h3>DukeALERT Test</h3>
+                <p>Wednesday, October 20<br>10:00am to 11:00am<br>None</p>
+            </div>
+        </div>
+        <hr class="left-line">
+        <div class="event">
+            <span class="date">10.20</span>
+            <div class="event-info">
+                <h3>Leaders in Global Health Seminar Series: Refugee Health & Global Health Education</h3>
+                <p>Wednesday, October 20<br>12:00pm to 1:00pm<br>Virtual</p>
+            </div>
+        </div>
+        <hr class="left-line">
+        <div class="event">
+            <span class="date">10.20</span>
+            <div class="event-info">
+                <h3>Years of Fire and Ash: South African Poems of Decolonization</h3>
+                <p>Wednesday, October 20<br>12:00pm to 1:00pm<br>Online</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="half-right">
+    <div class="content">
+        <div class="resources">
+            <h2>Resources</h2>
+            <div class="resource-grid">
+                <div>
+                    <h3>Duke Student Assistance Fund</h3>
+                    <img src="./Unit 13 - Duke Layout_files/student-assistance.jpg" alt="Duke Allen Building">
+                </div>
+                <div>
+                    <h3>Duke Scholarship and Engagement on COVID-19</h3>
+                    <img src="./Unit 13 - Duke Layout_files/scholarship.jpg" alt="Dr. Barton Haynes">
+                </div>
+                <div>
+                    <h3>Anti-Racism at Duke</h3>
+                    <img src="./Unit 13 - Duke Layout_files/anti-racism-tile.jpg" alt="close up of chappel">
+                </div>
+                <div>
+                    <h3>Keep Learning</h3>
+                    <img src="./Unit 13 - Duke Layout_files/keep-learning.jpg" alt="Lilly Library">
+                </div>
+                <div>
+                    <h3>Flexible Teaching</h3>
+                <img src="./Unit 13 - Duke Layout_files/keep-teaching.jpg" alt="Allen Building Entry">
+                </div>
+                <div>
+                    <h3>Keep Working</h3>
+                    <img src="./Unit 13 - Duke Layout_files/keep-working.jpg" alt="Duke Chapel">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
