@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="participation10" content="width=device-width, initial-scale=1.0">
+    <title>Participation 10</title>
+    <style>
+        .large {
+            display: none;
+        }
+
+        @media (min-width: 801px) {
+            .large {
+                display: block;
+            }
+
+            .small {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .small {
+                display: block;
+            }
+
+            .large {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="large">I'm large.</div>
+    <div class="small">I'm small.</div>
+</body>
+</html>
