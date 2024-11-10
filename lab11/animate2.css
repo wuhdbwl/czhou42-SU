@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+#first {
+    animation: shuffleFirst 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shuffleFirst {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+
+#second {
+    animation: shuffleSecond 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shuffleSecond {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(10px); }
+}
+
+#third {
+    animation: shuffleThird 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shuffleThird {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+}
+
+#messages {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}

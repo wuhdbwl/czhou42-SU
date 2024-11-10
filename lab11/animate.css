@@ -1,0 +1,44 @@
+.first {
+    position: relative;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+
+@keyframes first {
+    0% { left: 543px; top: 234px; }
+    33% { left: 964px; top: 423px; }
+    67% { left: 430px; top: 543px; }
+    100% { left: 340px; top: 876px; }
+}
+
+.second {
+    position: relative;
+    animation-name: second;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+
+@keyframes second {
+    0% { left: 294px; top: 363px; }
+    33% { left: 328px; top: 835px; }
+    67% { left: 500px; top: 528px; }
+    100% { left: 358px; top: 620px; }
+}
+
+.third {
+    position: relative;
+    animation-name: third;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+
+@keyframes third {
+    0% { left: 480px; top: 890px; }
+    33% { left: -300px; top: 457px; }
+    67% { left: 358px; top: 976px; }
+    100% { left: 480px; top: 467px; }
+}
