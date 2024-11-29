@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;                      
+    justify-content: space-between;      
+    align-items: center;                
+    padding: 10px 20px;                  
+    background-color: white;          
+}
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+i {
+    font-size: 30px;
+    color: #000000;                    
+}
+
+nav {
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #007bff;                     
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.first-column {
+    background-color: white;
+    border-radius: 10px;
+}
+.second-column {
+    background-color: white;
+    border-radius: 10px;
+}
+p:last-child {
+    text-align: center;
+    margin-top: 30px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+}
+.column + .column {
+    margin-left: 20px;
+}
+img {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid white;
+}
+.last_line {
+    text-align: center;
+    margin-top: 30px;
+}
+.button-container {
+    text-align: center;               
+    margin-top: 30px;                 
+}
+
+.btn {
+    padding: 12px 25px;            
+    font-size: 16px;                  
+    border: none;                      
+    cursor: pointer;                 
+    margin: 10px;                 
+    border-radius: 5px;                
+    transition: background-color 0.3s;
+}
+.primary-btn {
+    background-color: #000000;        
+    color: white;                   
+}
+
+.primary-btn:hover {
+    background-color: #0400ff;         
+}
+
+.secondary-btn {
+    background-color: black;         
+    color: white;                  
+}
+.secondary-btn:hover {
+    background-color: #0400ff;        
+}
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      max-width: 90%;
+    }
+  
+    div.flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    div.flex > div {
+      max-width: 90%;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+    img {
+        width: 80%;       
+        height: auto;      
+        margin: 0 auto; 
+    }
+  }
