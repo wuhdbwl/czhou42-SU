@@ -4,6 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     box-sizing: border-box;
+    background-color: lightblue;
 }
 
 .header-container {
@@ -11,17 +12,22 @@ body {
     justify-content: space-between;      
     align-items: center;                
     padding: 10px 20px;                  
-    background-color: white;          
+    background-color: lightblue;          
 }
-
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
 header {
     font-size: 24px;
     font-weight: bold;
+    color:white;
 }
 
 i {
     font-size: 30px;
-    color: #000000;                    
+    color: black;                    
 }
 
 nav {
@@ -30,7 +36,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: blueviolet;
     margin: 0 15px;
 }
 
@@ -40,16 +46,21 @@ nav a:hover {
 .row {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: lightblue;
     border-radius: 10px;
     padding: 20px;
 }
 .first-column {
-    background-color: white;
+    background-color: plum;
     border-radius: 10px;
 }
-.second-column {
-    background-color: white;
+
+.second-column-picture{
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.second-column-text{
+    background-color: plum;
     border-radius: 10px;
 }
 p:last-child {
@@ -64,9 +75,8 @@ p:last-child {
     margin-left: 20px;
 }
 img {
-    max-width: 500px;
+    max-width: 800px;
     height: auto;
-    border: 1px solid white;
 }
 .last_line {
     text-align: center;
@@ -87,8 +97,8 @@ img {
     transition: background-color 0.3s;
 }
 .primary-btn {
-    background-color: #000000;        
-    color: white;                   
+    background-color: lightsalmon;        
+    color: lightgreen;                   
 }
 
 .primary-btn:hover {
@@ -96,8 +106,8 @@ img {
 }
 
 .secondary-btn {
-    background-color: black;         
-    color: white;                  
+    background-color: lightsalmon;         
+    color: lightgreen;                  
 }
 .secondary-btn:hover {
     background-color: #0400ff;        
